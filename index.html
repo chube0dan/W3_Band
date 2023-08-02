@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asstest/css/base.css">
+    <link rel="stylesheet" href="./asstest/css/style.css">
+    <link rel="stylesheet" href="./asstest/css/grid.css">
+    <link rel="stylesheet" href="./asstest/css/responsive.css">
+    <link rel="stylesheet" href="./asstest/fonts/fontawesome-free-6.1.2-web/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <!-- Nav -->
+        <div class="grid">
+            <div class="nav">
+                <input type="checkbox" hidden id="checkbox-bars" class="nav__input">
+                <label for="checkbox-bars" class="nav__bars hide-on-tablet-mobile hover-white">
+                    <i class="fa-solid fa-bars nav__link"></i>
+                </label>
+                <ul class="nav__list ">
+                    <li class="nav__item">
+                        <a href="" class="nav__link hover-white">home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link hover-white">band</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link hover-white">tour</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link hover-white">contact</a>
+                    </li>
+                    <li class="nav__item nav__item--dropdown hide-off-tablet-mobile">
+                        <a href="" class="nav__link hover-white">
+                            more <i class="fa fa-caret-down"></i>
+                        </a>
+
+                        <ul class="nav__dropdown">
+                            <li class="dropdown__item">
+                                <a href="" class="dropdown__link hover-white">Merchandise</a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="" class="dropdown__link hover-white">Extras</a>
+                            </li>
+                            <li class="dropdown__item">
+                                <a href="" class="dropdown__link hover-white">Media</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link hover-white hide-off-pc hide-on-tablet-mobile">Merch</a>
+                    </li>
+                </ul>
+
+                <div class="nav__search">
+                    <a href="#" class="nav__link">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider -->
+        <div class="slider">
+            <img src="./asstest/img/chicago.jpg" alt="">
+            <div class="slider__content hide-off-tablet-mobile">
+                <h3 class="slider__title">Chicago</h3>
+                <p class="slider__document">Thank you, Chicago - A night we won't forget.</p>
+            </div>
+        </div>
+
+        <!-- Container the band -->
+        <div class="container">
+            <div class="grid wide">
+                <h3 class="container__title">THE BAND</h3>
+                <span class="container__span">We love music</span>
+                <p class="container__document">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                
+                <div class="row padding-32">
+                    <div class="container__third col l-4 m-4 c-12">
+                        <span class="container__name">Name</span>
+                        <img src="./asstest/img/bandmember.jpg" alt="" class="container__img">
+                    </div>
+                    <div class="container__third col l-4 m-4 c-12">
+                        <span class="container__name">Name</span>
+                        <img src="./asstest/img/bandmember.jpg" alt="" class="container__img">
+                    </div>
+                    <div class="container__third col l-4 m-4 c-12">
+                        <span class="container__name">Name</span>
+                        <img src="./asstest/img/bandmember.jpg" alt="" class="container__img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Container tour dates -->
+        <div class="container container__black">
+            <div class="grid wide">
+                <h3 class="container__title">TOUR DATES</h3>
+                <span class="container__span">Remember to book your tickets!</span>
+               
+                <br>
+
+                <ul class="container__black-book">
+                    <li class="container__black-item">
+                        <span class="container__black-span">September</span>
+                        <span class="container__black-sold-out">Sold out</span>
+                    </li>
+                    <li class="container__black-item">
+                        <span class="container__black-span">October</span>
+                        <span class="container__black-sold-out">Sold out</span>
+                    </li>
+                    <li class="container__black-item">
+                        <span class="container__black-span">November</span>
+                        <span class="container__black-third">3</span>
+                    </li>
+                </ul>
+
+                <div class="row padding-32">
+                    <input type="checkbox" id="tickets" hidden class="container__black-input">
+                    <div class="col l-4 m-4 c-12">
+                        <div class="container__black-white">
+                            <div class="container__black-city">
+                                <img src="./asstest/img/newyork.jpg" alt="" class="container__black-img">
+                            </div>
+                             <div class="container__black-location">
+                                <h4 class="container__black-title">New York</h4>
+                                <span class="container__black-date">Fri 27 Nov 2016</span>
+                                <p class="container__black-document">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <label class="container__black-btn btn hover-white" for="tickets">Buy Tickets</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-12">
+                        <div class="container__black-white">
+                            <div class="container__black-city">
+                                <img src="./asstest/img/paris.jpg" alt="" class="container__black-img">
+                            </div>
+                             <div class="container__black-location">
+                                <h4 class="container__black-title">Paris</h4>
+                                <span class="container__black-date">Sat 28 Nov 2016</span>
+                                <p class="container__black-document">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <label class="container__black-btn btn hover-white" for="tickets">Buy Tickets</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-12">
+                        <div class="container__black-white">
+                            <div class="container__black-city">
+                                <img src="./asstest/img/sanfran.jpg" alt="" class="container__black-img">
+                            </div>
+                             <div class="container__black-location">
+                                <h4 class="container__black-title">San Francisco</h4>
+                                <span class="container__black-date">Sun 29 Nov 2016</span>
+                                <p class="container__black-document">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <label class="container__black-btn btn hover-white" for="tickets">Buy Tickets</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tickets -->
+                    <label for="tickets" class="outline"></label>
+                    <div class="buy-ticket">
+                        <div class="buy-ticket__tickets">
+                            <i class="fa fa-suitcase"></i> Tickets
+                        </div>
+
+                        <div class="buy-ticket__container">
+                            <div class="buy-ticket__inport">
+                                <label for="how-many" class="buy-ticket__document">
+                                    <i class="fa fa-shopping-cart"></i> Tickets, $15 per person
+                                </label>
+                                <input type="text" id="how-many" class="buy-ticket__input" placeholder="How many?">
+                            </div>
+
+                            <div class="buy-ticket__inport">
+                                <label for="email" class="buy-ticket__document">
+                                    <i class="fa fa-user"></i> Send To
+                                </label>
+                                <input type="email" id="email" class="buy-ticket__input" placeholder="Enter email">
+                            </div>
+
+                            <div class="buy-ticket__pay btn hover-white">
+                                PAY <i class="fa fa-check"></i>
+                            </div>
+                            <div class="buy-ticket__footer">
+                                <label class="buy-ticket__close btn hover-white" for="tickets">
+                                    Close <i class="fa fa-remove"></i>
+                                </label>
+                    
+                                <div class="buy-ticket__support">
+                                    Need <a href="#" class="buy-ticket__help">help?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="buy-ticket__x hover-white" for="tickets">
+                            <i class="fa-sharp fa-solid fa-xmark"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Container contact -->
+        <div class="container">
+            <div class="grid wide">
+                <h3 class="container__title">CONTACT</h3>
+                <span class="container__span">Fan? Drop a note!</span>
+                
+                <div class="row padding-32">
+                    <div class="col l-6 m-6 c-12 container__contact-content">
+                        <div class="container__contact-document">
+                            <i class="fa fa-map-marker"></i> Chicago, US
+                        </div>
+
+                        <div class="container__contact-document">
+                            <i class="fa fa-phone"></i> Phone: +00 151515
+                        </div>
+
+                        <div class="container__contact-document">
+                            <i class="fa fa-envelope"></i>  Email: mail@mail.com
+                        </div>
+                    </div>
+
+                    <div class="col l-6 m-6 c-12">
+                        <div class="row">
+                            <div class="col l-6 m-6 c-12 container__contact-text">
+                                <input type="text" class="container__contact-input" placeholder="Name">
+                            </div>
+                            <div class="col l-6 m-6 c-12">
+                                <input type="text" class="container__contact-input" placeholder="Email">
+                            </div>
+                        </div>
+                        <input type="text" class="container__contact-input container__contact-message" placeholder="Message">
+                        <div class="btn container__contact-btn hover-white">Send</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Container map -->
+        <div class="container-map">
+            <img src="./asstest/img/map.jpg" style="width: 100%;" alt="map">
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-snapchat"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <p class="footer__document">
+                Powered by <a href="https://www.w3schools.com/w3css/default.asp" class="footer__link">w3.css</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

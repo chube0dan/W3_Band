@@ -1,0 +1,50 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .hide-off-tablet-mobile {
+        display: none;
+    }
+
+    .hide-on-tablet-mobile {
+        display: block;
+    }
+
+    .nav__list  {
+        position: absolute;
+        display: none;
+        top: var(--nav-height);
+        background: #000;
+        width: 100%;
+    }
+
+    .nav__input:checked ~ .nav__list {
+        display: block;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}   
+
+/* Mobile */
+@media (max-width: 739px) {
+    .container__black-white {
+        margin-bottom: 15px;
+    }
+
+    .container__contact-content {
+        margin-bottom: 16px;
+    }
+
+    .container__contact-text {
+        margin-bottom: 15px;
+    }
+
+    .container__black-btn {
+        width: 100%;
+    }
+
+    .buy-ticket {
+        margin-top: var(--nav-height);
+    }
+}
